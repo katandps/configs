@@ -122,6 +122,11 @@ PATH="$PATH":/home/katand/.local/bin
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 # for verify
 export YUKICODER_TOKEN="op://Personal/env-for-verification/env/YUKICODER_TOKEN"
 export DROPBOX_APP_KEY="op://Personal/env-for-verification/env/DROPBOX_APP_KEY"
