@@ -132,3 +132,6 @@ export YUKICODER_TOKEN="op://Personal/env-for-verification/env/YUKICODER_TOKEN"
 export DROPBOX_APP_KEY="op://Personal/env-for-verification/env/DROPBOX_APP_KEY"
 export DROPBOX_APP_SECRET="op://Personal/env-for-verification/env/DROPBOX_APP_SECRET"
 export DROPBOX_REFRESH_TOKEN="op://Personal/env-for-verification/env/DROPBOX_REFRESH_TOKEN"
+
+# git aliases
+alias clean-branch="git fetch --prune && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs -r git branch -D"
