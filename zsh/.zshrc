@@ -134,4 +134,4 @@ export DROPBOX_APP_SECRET="op://Personal/env-for-verification/env/DROPBOX_APP_SE
 export DROPBOX_REFRESH_TOKEN="op://Personal/env-for-verification/env/DROPBOX_REFRESH_TOKEN"
 
 # git aliases
-alias clean-branch="git fetch --prune && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs -r git branch -D"
+alias clean-branch="git fetch --prune && git branch -vv | grep ': gone]' | awk '{print \$1}' | xargs -r git branch -D"
